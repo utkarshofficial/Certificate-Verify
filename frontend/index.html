@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnCODErs Community</title>
+  <link rel="stylesheet" href="./css/componenets.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="box">
+    <div class="heading">
+      <!-- <h1>EnCODErs Community</h1> -->
+      <img class="logo" src="./imgs/header.png" alt="">
+      <div class="contact">
+        Need help? Contact us at <a href="mailto:encoders.community@gmail.com">encoders.community@gmail.com</a>
+        Voucher T&Cs apply. Offer valid for a limited time.
+      </div>
+    </div>
+
+    <div class="validator-box">
+      <div class="label">
+        <p class="title">Certificate Validator</p>
+        <p class="subtitle">Verify the authenticity of your EnCODErs Internship Program certificate</p>
+      </div>
+      <div class="input">
+        <input type="text" id="cert-number" placeholder="e.g., ENCD-KD32-XY23">
+      </div>
+    </div>
+
+    <div class="result">
+      <p>Certificate Validated!</p>
+      <p class="text">Congratulations, 
+        <span id="holder_name">Student Name</span>
+        ! Your certificate is authentic.
+      </p>
+      <p class="text">
+        Issued on: 
+        <span id="issue_date">12 Jan, 2000</span>
+      </p>
+      <p class="text">
+        Program
+        <span id="program_name">EnCODErs Internship Program</span>
+      </p>
+      <div class="voucher">
+        <p class="text">
+          You've earned a special reward! Click below to claim your Amazon voucher.
+        </p>
+        <button class="voucher-btn">Claim</button>
+      </div>
+    </div>
+
+    <div class="invalid">
+      Invalid Certificate ID. Please check and try again.
+    </div>
+  </div>
+</body>
+
+</html>
