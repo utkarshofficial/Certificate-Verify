@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>EnCODErs Community</title>
+  <link rel="stylesheet" href="./css/componenets.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="box">
+    <div class="heading">
+      <!-- <h1>EnCODErs Community</h1> -->
+      <img class="logo" src="./imgs/header.png" alt="">
+      <div class="contact">
+        <p>Need help? Contact us at <a href="mailto:encoders.community@gmail.com">encoders.community@gmail.com</a></p>
+        <p>
+          Gift Card T&Cs apply. Offer valid for a limited time.
+        </p>
+      </div>
+    </div>
+
+    <div class="validator-box">
+      <div class="label">
+        <p class="title">Certificate Validator</p>
+        <p class="subtitle">Verify the authenticity of your EnCODErs Internship Program certificate</p>
+      </div>
+      <div class="input-box">
+        <div class="textInputWrapper">
+          <input maxlength="14" id="certificate_id" placeholder="e.g., ENCD-KD32-XY23" type="text" class="textInput">
+        </div>
+        <button id="btn_fetch_certificate" class="button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
+            </path>
+          </svg>
+          <div class="text">
+            Go
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="card">
+        <div class="content">
+          <div class="back">
+            <div class="back-content">
+              <strong>Unbox 🎁</strong>
+            </div>
+          </div>
+          <div class="front">
+
+            <div class="img">
+              <div class="circle">
+              </div>
+              <div class="circle" id="right">
+              </div>
+              <div class="circle" id="bottom">
+              </div>
+            </div>
+
+            <div class="front-content">
+              <small class="badge">🎉</small>
+              Your Certificate and Amazon Gift Card will be sent to your email address within 48 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loader"></div>
+
+      <div class="certified">
+        <p>Certificate Validated!</p>
+        <hr>
+        <p class="text">Congratulations 🎉,
+          <span id="holder_name">Student Name</span>
+          ! Your certificate is authentic.
+        </p>
+        <p class="text">
+          Issued on:
+          <span id="issue_date">12 Jan, 2000</span>
+        </p>
+        <p class="text">
+          Program
+          <span id="program_name">EnCODErs Internship Program</span>
+        </p>
+        <div class="voucher">
+          <p class="text">
+            You've earned a special reward! Click the button to claim your gift card.
+          </p>
+          <button class="voucher-btn btn">Get</button>
+        </div>
+      </div>
+
+      <div class="invalid">
+        Invalid Certificate ID. Please check and try again.
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script/script.js"></script>
+</body>
+
+</html>
